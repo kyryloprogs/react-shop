@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
+import MainPage from "./pages/MainPage";
+import GoodsPage from './pages/GoodsPage';
+import { Box } from "@mui/material";
 
 function App() {
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Header />
+      <Box sx={{ marginLeft: "90px" }}>
+
+
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+
+        <Route path="/favorites" element={
+          <div>
+            test
+          </div>
+        } />
+
+        <Route path="/category" element={<GoodsPage/>}/>
+      </Routes>
+
+    </Box>
+    </div >
   );
 }
 
