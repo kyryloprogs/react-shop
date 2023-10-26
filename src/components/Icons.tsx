@@ -88,11 +88,116 @@ function SvgIconPC({ active }: Props) {
     );
 }
 
+function SvgIconArrow({ active }: Props) {
+    return (
+        <SvgIcon>
+            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none">
+                <path d="M1.125 15.4125L0 14.2875L6.63749 7.70624L0 1.125L1.125 0L8.88749 7.70624L1.125 15.4125Z" fill="#766ED3" />
+            </svg>
+        </SvgIcon>
+    );
+}
+
+function SvgIconFavMini() {
+    return (
+        <SvgIcon sx={{ width: "32px", height: "32px"}}>
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="favorite">
+                    <path id="XMLID_16_" d="M16.842 3.54801L20.132 10.532C20.269 10.822 20.533 11.023 20.839 11.07L28.196 12.19C28.966 12.307 29.273 13.298 28.716 13.867L23.392 19.303C23.171 19.529 23.07 19.854 23.122 20.173L24.379 27.849C24.51 28.652 23.706 29.265 23.017 28.885L16.437 25.261C16.164 25.11 15.837 25.11 15.564 25.261L8.98401 28.885C8.29601 29.264 7.49101 28.652 7.62201 27.849L8.87901 20.173C8.93101 19.854 8.83001 19.529 8.60901 19.303L3.28501 13.867C2.72801 13.298 3.03501 12.307 3.80501 12.19L11.162 11.07C11.468 11.023 11.732 10.822 11.869 10.532L15.159 3.54801C15.503 2.81701 16.497 2.81701 16.842 3.54801Z" fill="#F8DC25" />
+                </g>
+            </svg>
+        </SvgIcon>
+    );
+}
+
+function SvgIconViews() {
+    return (
+        <SvgIcon sx={{ width: "32px", height: "32px"}}>
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="views 1" clip-path="url(#clip0_12_1965)">
+                    <path id="Vector" d="M16 25C11.735 25 7.699 23.193 4.633 19.912C4.256 19.509 4.278 18.876 4.681 18.499C5.085 18.122 5.717 18.144 6.095 18.547C8.778 21.419 12.295 23 16 23C20.763 23 25.149 20.395 27.84 16C25.15 11.605 20.763 9 16 9C11.062 9 6.528 11.801 3.87 16.493C3.598 16.974 2.986 17.144 2.507 16.87C2.026 16.598 1.858 15.988 2.13 15.507C5.147 10.18 10.333 7 16 7C21.668 7 26.853 10.18 29.87 15.507C30.043 15.813 30.043 16.187 29.87 16.492C26.853 21.819 21.668 25 16 25Z" fill="black" />
+                </g>
+                <g id="Group_3">
+                    <path id="Vector_2" d="M16 21C13.243 21 11 18.757 11 16C11 13.243 13.243 11 16 11C18.757 11 21 13.243 21 16C21 18.757 18.757 21 16 21ZM16 13C14.346 13 13 14.346 13 16C13 17.654 14.346 19 16 19C17.654 19 19 17.654 19 16C19 14.346 17.654 13 16 13Z" fill="black" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_12_1965">
+                        <rect width="32" height="32" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+
+        </SvgIcon>
+    );
+}
+function SvgIconLike() {
+    return (
+        <SvgIcon sx={{ width: "22px", height: "20px"}}>
+            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="like 1" clip-path="url(#clip0_12_1982)">
+                    <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M0 20H4V8H0V20ZM22 9C22 7.9 21.1 7 20 7H13.7L14.7 2.4V2.1C14.7 1.7 14.5 1.3 14.3 1L13.2 0L6.6 6.6C6.2 6.9 6 7.4 6 8V18C6 19.1 6.9 20 8 20H17C17.8 20 18.5 19.5 18.8 18.8L21.8 11.7C21.9 11.5 21.9 11.2 21.9 11V9H22C22 9.1 22 9 22 9Z" fill="#52FF00" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_12_1982">
+                        <rect width="22" height="20" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+
+
+        </SvgIcon>
+    );
+}
+
+function SvgIconDislike() {
+    return (
+        <SvgIcon sx={{ width: "22px", height: "20px"}}>
+            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="dislike 1" clip-path="url(#clip0_12_1990)">
+                    <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M14 0H5C4.2 0 3.5 0.5 3.2 1.2L0.2 8.3C0.1 8.5 0 8.7 0 9V10.9V11C0 12.1 0.9 13 2 13H8.3L7.3 17.6V17.9C7.3 18.3 7.5 18.7 7.7 19L8.8 20L15.4 13.4C15.8 13 16 12.5 16 12V2C16 0.9 15.1 0 14 0ZM18 0V12H22V0H18Z" fill="#FA2626" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_12_1990">
+                        <rect width="22" height="20" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+
+
+        </SvgIcon>
+    );
+}
+
+function SvgIconPrice() {
+    return (
+        <SvgIcon sx={{ width: "53px", height: "53px"}}>
+            <svg width="54" height="53" viewBox="0 0 54 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="price 1" clip-path="url(#clip0_14_3003)">
+                    <path id="Vector" d="M50.7415 6.49767C50.7415 5.05886 49.5545 3.89302 48.0895 3.89302C47.924 3.89302 32.309 3.89511 32.309 3.89511C30.8981 3.89511 29.5477 3.82218 28.7648 4.59107L4.65382 28.2705C3.86989 29.0394 3.86989 30.2875 4.65382 31.0564L23.0842 49.1577C23.8671 49.9266 25.1379 49.9266 25.9208 49.1577L50.0308 25.4772C50.8136 24.7094 50.7394 23.4144 50.7394 21.9974C50.7394 21.9974 50.7415 6.6602 50.7415 6.49767Z" fill="#00C908" />
+                    <path id="Vector_2" d="M42.2551 15.3535C44.0127 15.3535 45.4375 13.9541 45.4375 12.2279C45.4375 10.5017 44.0127 9.10233 42.2551 9.10233C40.4975 9.10233 39.0726 10.5017 39.0726 12.2279C39.0726 13.9541 40.4975 15.3535 42.2551 15.3535Z" fill="white" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_14_3003">
+                        <rect width="53.0402" height="52.093" fill="white" transform="translate(0.883728 0.767442)" />
+                    </clipPath>
+                </defs>
+            </svg>
+
+
+        </SvgIcon>
+    );
+}
 export default {
     SvgIconHome,
     SvgIconFavorite,
     SvgIconCategory,
     SvgIconPC,
     SvgIconCar,
-    SvgIconClothes
+    SvgIconClothes,
+    SvgIconArrow,
+    SvgIconFavMini,
+    SvgIconViews,
+    SvgIconDislike,
+    SvgIconLike,
+    SvgIconPrice
 };

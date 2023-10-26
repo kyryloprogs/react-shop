@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundColor: {
+        "supergray": "#EBECEE"
+      },
       spacing: {
         '85': '85px',
       },
@@ -15,6 +18,9 @@ module.exports = {
         'banner4': "url('./img/banner4.png')",
         'banner5': "url('./img/banner5.png')",
         'banner6': "url('./img/banner6.png')",
+      },
+      borderRadius: {
+        "extrumsDefault": "10px"
       }
     },
   },

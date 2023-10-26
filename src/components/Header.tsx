@@ -176,7 +176,8 @@ export default function PrimarySearchAppBar() {
                     {/* <div className="w-[58px] h-[58px]">
                         <SearchIcon />
                     </div> */}
-                    #FBF8F8
+                    {/* #FBF8F8 */}
+                
                     <Search sx={{ height: "58px", width: "490px", background: "#FBF8F8", borderRadius: "18px 0 0 18px" }}>
                         <SearchIconWrapper>
                             <SearchIcon />
