@@ -14,6 +14,7 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
+    boxShadow: 0,
     //   width: 400,
     //   bgcolor: 'background.paper',
     // border: '0px',
@@ -22,7 +23,7 @@ const style = {
 };
 
 const LoginPage = () => {
-    const [cookies, setCookie] = useCookies(['token']);
+    const [cookies, setCookie] = useCookies(['bestproducts']);
 
     const [open, setOpen] = useState(true);
     const handleOpen = () => setOpen(true);
@@ -30,24 +31,23 @@ const LoginPage = () => {
 
     useEffect(() => {
         const data = sessionStorage.getItem('session');
-        if (!cookies.token) {
+        if (!cookies.bestproducts) {
             setOpen(true);
         }
     }, [])
 
     return (
-        <Modal
-            open={open}
-            onClose={handleClose}
-            aria-labelledby="modal-modal-title"
-            aria-describedby="modal-modal-description"
-            sx = {{ border: "none"}}
-        >
-            <Box sx={style}>
+
+        <Box sx={style}>
+            <div className='flex flex-row gap-[87px]'>
                 <LoginBlock />
-                {/* <RegisterBlock/> */}
-            </Box>
-        </Modal>
+                <RegisterBlock />
+            </div>
+
+
+        </Box>
+
+
     )
 }
 

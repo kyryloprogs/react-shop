@@ -1,10 +1,14 @@
-import React from 'react'
+import { Typography } from '@mui/material'
 
-type Props = {}
+type Props = {
+  description: string
+}
 
 const Description = (props: Props) => {
   return (
-    <div>Charasteristics</div>
+    <div className='mt-[67px] w-[90%] ml-[70px] mb-10'>
+      <Typography variant='description'>{props.description}</Typography>
+    </div>
   )
 }
 

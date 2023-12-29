@@ -4,6 +4,7 @@ import MuiDrawer from '@mui/material/Drawer';
 const drawerWidth = 360;
 
 const openedMixin = (theme: Theme): CSSObject => ({
+    marginBottom: "90px",
     marginTop: "90px",
     width: drawerWidth,
     transition: theme.transitions.create('width', {
@@ -36,7 +37,7 @@ const openedMixin = (theme: Theme): CSSObject => ({
 });
 
 const closedMixin = (theme: Theme): CSSObject => ({
-
+    marginBottom: "90px",
     marginTop: "90px",
     transition: theme.transitions.create('width', {
         easing: theme.transitions.easing.sharp,

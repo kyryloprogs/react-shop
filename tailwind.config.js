@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: {
-        "supergray": "#EBECEE"
+        "supergray": "#EBECEE",
+        "extrumsPurple": "#766ED3"
       },
       spacing: {
         '85': '85px',

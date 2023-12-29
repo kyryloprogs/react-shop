@@ -40,7 +40,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 // import AdbIcon from '@mui/icons-material/Adb';
-import SideBar from './SideBar';
+import SideBar from './SideBar/SideBar';
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];

@@ -1,27 +1,35 @@
-import { LineChart } from '@mui/x-charts'
-import React from 'react'
+import React from 'react';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import dayjs from 'dayjs';
 
 type Props = {
-    data: Array<any>,
+    data: [
+        {
+            price: number,
+            regDate: string
+        }
+    ]
 }
+const Price = (props: Props) => {
+    console.log(props);
+    const chartData = props.data.map((e) => ({
+        month: dayjs(e.regDate).format("MMM"),
+        sales: e.price
+      }));
 
-const Price = ({ data }: Props) => {
-    const xAsisData = data.map(a => new Date(a.regDate).toLocaleString('en-US', { month: 'long' }));
-    console.log()
+   
     return (
-        <div className="min-h-[750px]">
-            <LineChart
-                series={[
-                    { curve: "linear", data: data.map(a => a.price) },
-                    // { curve: "linear", data: [6, 3, 7, 9.5, 4, 2] },
-                ]}
-                xAxis={[{ data: xAsisData }]} 
-                sx={{ width: "100%", marginTOp: "60px" }}
-                height={700}
-            />
-
+        <div className='flex justify-center items-center mt-16'>
+            <LineChart width={1300} height={518} data={chartData}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="month" />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Line type="linear" dataKey="sales" stroke="#8884d8" activeDot={{ r: 8 }} />
+            </LineChart>
         </div>
-    )
-}
+    );
+};
 
-export default Price
+export default Price;
